@@ -1,0 +1,2 @@
+Time    	RPM Setpoints 	Measured RPM 	Measured km/h 	Torque Est. 	I           	I_q         	I_d         	Power   	Torque SetPoints
+0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	14.715000
