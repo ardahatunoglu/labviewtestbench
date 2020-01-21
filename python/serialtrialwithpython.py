@@ -8,12 +8,12 @@ from numpy import diff
 
 # car parameter initialization
 
-m = 1200  # kg mass of the vehicle
+m = 1800  # kg mass of the vehicle
 g = 9.81  # m/s^2 gravitational accelaration
-mu = 0.005  # rolling friction dry road
+mu = 0.008  # rolling friction dry road
 ro = 1.225  # kg/m^3 air density
-c_d = 0.4  # aerodynamic drag coefficient
-A = 2.5  # m^2 frontal area of the vehicle
+c_d = 0.35  # aerodynamic drag coefficient
+A = 3.5  # m^2 frontal area of the vehicle
 d = 0.5  # tyre diameter in meters
 r = d / 2  # radius of the tyre
 theta = 0
@@ -53,10 +53,10 @@ t = np.asfarray(t, float)
 
 dn = np.append(dn, [0.0])
 
-T = n ** 2 * D_1 + D_2 + dn * D_3
+T = (n ** 2 * D_1 + D_2 + dn * D_3)/4
 
-plt.plot(t[0:100], n[0:100])
-plt.plot(t[0:100], T[0:100])
+
+plt.plot(t[778:1800], T[778:1800])
 plt.xlabel('Time(s)')
 plt.ylabel('Torque(N.m)')
 plt.show()
