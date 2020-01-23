@@ -8,7 +8,7 @@ from numpy import diff
 
 # car parameter initialization
 
-m = 1800  # kg mass of the vehicle
+m = 2000  # kg mass of the vehicle
 g = 9.81  # m/s^2 gravitational accelaration
 mu = 0.008  # rolling friction dry road
 ro = 1.225  # kg/m^3 air density
@@ -55,8 +55,7 @@ dn = np.append(dn, [0.0])
 
 T = (n ** 2 * D_1 + D_2 + dn * D_3)/4
 
-
-plt.plot(t[778:1800], T[778:1800])
+plt.plot(t[130:150], T[130:150])
 plt.xlabel('Time(s)')
 plt.ylabel('Torque(N.m)')
 plt.show()
