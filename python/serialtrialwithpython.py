@@ -55,7 +55,7 @@ dn = np.append(dn, [0.0])
 
 T = (n ** 2 * D_1 + D_2 + dn * D_3)/4
 
-plt.plot(t[130:150], T[130:150])
+plt.plot(t[0:100], T[0:100])
 plt.xlabel('Time(s)')
 plt.ylabel('Torque(N.m)')
 plt.show()
